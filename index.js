@@ -213,6 +213,20 @@ $('#checkbtn').click(function() {
 
 });
 
+
+$('#form-submit').click(function() {
+  var checkbox= 'input[type="checkbox"]';
+  if($(checkbox+":checked").length!=$(checkbox).length){
+    // alert("you should fill on required fields to proceed")
+  }
+
+  else if (($(checkbox+":checked").length==$(checkbox).length)) {
+    location.href="detailsform.html"
+    alert('you have successfully submitted')
+  }
+
+});
+
 // this incicates photo select checkbox
 // $("input[value='photo']").change(function(){
 //      if($(this).prop('checked') == true){
