@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>html forms</title>
+    <!-- <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/bootstrap.css">
+    <script type="text/javascript" src="js/bootstrap.min.js"> -->
+
+    <!-- CSS only -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+<link rel="stylesheet" href="style.css">
+
+<!-- JS, Popper.js, and jQuery -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+<script type="text/javascript" src="index.js"> </script>
+
+  </head>
+  <body class="body">
+    <div class="container-xxl main_container  py-5 ">
+    <div class="row d-flex justify-content-center">
+        <div class="col-xl-5 col-lg-6 col-md-7">
+            <div class="card b-0">
+                <h3 class="heading">Criteria for admission proess of students</h3>
+
+<!--
+                <ul id="progressbar" class="text-center">
+                    <li class="active step0" id="step1"></li>
+                    <li class="step0" id="step2"></li>
+                    <li class="step0" id="step3"></li>
+                    <li class="step0" id="step4"></li>
+                </ul> -->
+
+                <p class="heading"> <span class="yellow-text">select all that applies</span></p>
+                <p class="desc"> <span class="red-text">*Every requirement should be selected to proceed further</span></p>
+
+                <fieldset class="show">
+                    <div class="form-card">
+                        <div class="row px-1 radio-group">
+                          <table class="table table-striped table-bordered">
+                            <tbody>
+                              <tr>
+                              <div class="card-blockquote" >
+                            <td>
+                              <p>only children with disabilities like blindness, deafness and low visiona re admitted in the rehabilitation centre</p>
+                            </td>
+                              <td> <input type="checkbox" name="BoxSelect[]" value="Box 1" required> Agree</td>
+                            </div>
+                              </tr>
+
+                              <tr>
+
+                              <div class="card-blockquote" >
+
+                            <td> <p>only children with disabilities like blindness, deafness and low visiona re admitted in the rehabilitation centre</p></td>
+                              <td> <input type="checkbox" name="BoxSelect[]" value="Box 2" required> Agree</td>
+                            </div>
+                              </tr>
+
+                              <tr>
+
+                              <div class="card-blockquote" >
+                            <td> <p>children with other disabilities along with blindness or deafness are not admitted on the rehabilitation centre</p></td>
+                              <td> <input type="checkbox" name="BoxSelect[]" value="" required> Agree</td>
+                            </div>
+                              </tr>
+
+                              <tr>
+                              <div class="card-blockquote" >
+                            <td> children should have age between 4 and 9 years </td>
+                              <td> <input type="checkbox" name="BoxSelect[]" value="" required> Agree</td>
+                            </div>
+                              </tr>
+
+                              <tr>
+                              <div class="card-blockquote" >
+                            <td> <p>children shall not have joined any school beforehand</p></td>
+                              <td> <input type="checkbox" name="BoxSelect[]" value=""> Agree</td>
+                            </div>
+                              </tr>
+
+                              <tr>
+                              <div class="card-blockquote" >
+                            <td> <p>If children have no guradain available, then concerned person or organization shall take responsibility of children after the rehabilitation on time</p></td>
+                              <td> <input type="checkbox" name="BoxSelect[]" value="" required> Agree</td>
+                            </div>
+                              </tr>
+
+                              <tr>
+                              <div class="card-blockquote" >
+                            <td> <p>At the time of admission of children citizenship photocopy of guradain or parents should be submitted compulsorily</p></td>
+                              <td> <input type="checkbox" name="BoxSelect[]" value="" required> Agree</td>
+                            </div>
+                              </tr>
+
+                              <tr>
+                              <div class="card-blockquote" >
+                            <td>   <p>Passport size photo and Photocopy of birth certificate and  of the child and  must be submitted</p></td>
+                              <td> <input type="checkbox" name="BoxSelect[]" value="photo" required id="photo" > Agree</td>
+                            </div>
+                              </tr>
+
+                              <tr>
+                              <div class="card-blockquote" >
+                            <td><p>Mobile number used by parents along with some relatives and neighbors should be submitted</p> </td>
+                              <td> <input type="checkbox" name="BoxSelect[]" value="" required> Agree</td>
+                            </div>
+                              </tr>
+
+                              <tr>
+                              <div class="card-blockquote" >
+                            <td> </td>
+                              <td> <input type="checkbox" name="BoxSelect[]" value="" required> Agree</td>
+                            </div>
+                              </tr>
+
+                            </tbody>
+                          </table>
+
+
+
+
+<!--
+                  <div class="card-blockquote radio" >
+                    <p>parenst of admitted children should compulsorily take Psycho-social counselling</p>
+                  </div>
+
+                  <div class="card-blockquote radio" >
+                    <p>If parents wish to meet their children after admission in rehabilitation centre they shall only meet on allocated time</p>
+                  </div>
+
+                  <div class="card-blockquote radio" >
+                    <p>If some relatives wish to meet the children after admission they should submit some identity certificate  then only they will be allowed</p>
+                  </div>
+
+                  <div class="card-blockquote radio" >
+                    <p>Children can not be taken outside hospital premises without authorization either it's parents or relatives</p>
+                  </div>
+
+                  <div class="card-blockquote radio" >
+                    <p>If rehabilitation centre calls  you under any circumstances then you must arrive by the given time</p>
+                  </div>
+
+                  <div class="card-blockquote radio" >
+                    <p>Guardain should stay with children at least for three days at the time of admission</p>
+                  </div>
+
+                  <div class="card-blockquote radio" >
+                    <p> The rehabilitation centre provides training on daily activities which opens the door of education for them in different schools</p>
+                  </div> -->
+                  <!-- <input type="button" name="" value="Test required" id="checkbtn"> -->
+                        <button id="checkbtn" class="btn-block btn-dark mt-3 mb-1 next mt-4" >proceed<span class="fa fa-long-arrow-right"></span></button>
+
+                    </div>
+                </fieldset>
+
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+  </body>
+</html>

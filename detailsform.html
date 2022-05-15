@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>html forms</title>
+    <!-- <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/bootstrap.css">
+    <script type="text/javascript" src="js/bootstrap.min.js"> -->
+
+    <!-- CSS only -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+<!-- <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.css"/> -->
+<!-- <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/jquery.bootstrapvalidator/0.5.3/css/bootstrapValidator.css"/> -->
+<link rel="stylesheet" href="style.css">
+
+<!-- JS, Popper.js, and jQuery -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+<!-- <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery.bootstrapvalidator/0.5.3/js/bootstrapValidator.js"></script> -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.bootstrapvalidator/0.5.3/js/bootstrapValidator.min.js"> </script>
+<!-- <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.0/jquery.js"></script> -->
+<!-- <script type="text/javascript" src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.js"></script> -->
+<script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.11.1/jquery.validate.min.js"></script>
+<script type="text/javascript" src="index.js"> </script>
+<script type="text/javascript" src="detailsform.js"> </script>
+
+  </head>
+
+  <body>
+    <div class="container-fluid margin-auto">
+
+  <form class="well form-horizontal" action=" " method="post"  id="contact_form">
+<fieldset class="show">
+
+<!-- Form Name -->
+<legend><center><h2><b>Registration Form</b></h2></center></legend><br>
+
+<div class="card-blockquote">
+
+<h3 class="card-header col-lg-6"> Basic details</h3>
+
+
+<!-- Text input-->
+
+<div class="form-group">
+<label class="col-lg control-label">First Name</label>
+<div class="col-lg-6 inputGroupContainer">
+<div class="input-group">
+<span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+<input  name="first_name" placeholder="First Name" class="form-control"  type="text" >
+  </div>
+</div>
+</div>
+
+<!-- Text input-->
+
+<div class="form-group">
+<label class="col-lg-6 control-label" >Last Name</label>
+  <div class="col-lg-6 inputGroupContainer">
+  <div class="input-group">
+<span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+<input name="last_name" placeholder="Last Name" class="form-control"  type="text" required>
+  </div>
+</div>
+</div>
+
+<div class="form-group">
+<label class="col-lg-6 control-label">Type of DIsability</label>
+  <div class="col-lg-6 selectContainer">
+  <div class="input-group">
+      <span class="input-group-addon"><i class="glyphicon glyphicon-list"></i></span>
+  <select name="department" class="form-control selectpicker">
+    <option value="">which type of disability do child have</option>
+    <option>BLindness</option>
+    <option>Deafness</option>
+    <option >Blindness with other disabilities</option>
+    <option >Partial visuality</option>
+  </select>
+</div>
+</div>
+</div>
+
+<!-- Text input-->
+
+<div class="form-group">
+<label class="col-lg-6 control-label">Fathers Name</label>
+<div class="col-lg-6 inputGroupContainer">
+<div class="input-group">
+<span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+<input  name="user_name" placeholder="Father,s Name" class="form-control"  type="text" required>
+  </div>
+</div>
+</div>
+
+
+<!-- Text input-->
+
+<div class="form-group">
+<label class="col-lg-6 control-label">Mothers Name</label>
+<div class="col-lg-6 inputGroupContainer">
+<div class="input-group">
+<span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+<input  name="user_name" placeholder="Mothers Name" class="form-control"  type="text" required>
+  </div>
+</div>
+</div>
+
+</div>
+
+
+<!-- Text input-->
+
+<div class="form-group">
+<label class="col-lg-6 control-label"> contact Number.</label>
+  <div class="col-lg-6 inputGroupContainer">
+  <div class="input-group mb-3">
+      <span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span>
+<input name="contact_no" placeholder="primary number" class="form-control" type="tel" required>
+<input name="contact_no" placeholder="secondary number" class="form-control" type="tel">
+
+  </div>
+</div>
+</div>
+
+<div class="card-blockquote col-lg-6">
+  <label class="col-lg-6 control-label" > click below upload child photo</label>
+    <input type="file" name="" value="" id="profileimg">
+    <img src="" alt="child pic" id="upload-profile" class="upload-img" required>
+</div>
+
+
+
+
+<div class="card-blockquote col-lg-6">
+<label class="col-lg-6 control-label" > click below to  upload child birth certificate</label>
+<input type="file" name="" value="" id="birthcertificateimg">
+<img src="" alt="birth certificate" id="upload-certificate" class="upload-img">
+</div>
+
+
+<div class="card-blockquote col-lg-6">
+  <label class="col-lg-6 control-label" > click below upload parents citizenship</label>
+    <input type="file" name="" value="" id="citizenshipimg">
+    <img src="" alt="child pic" id="upload-citizenship" class="upload-img" required>
+</div>
+
+<br>
+
+<!-- Text input-->
+
+<div class="card-blockquote">
+
+  <h3 class="card-header col-lg-6"> Guardian details</h3>
+
+
+  <!-- Text input-->
+
+  <div class="form-group">
+  <label class="col-lg control-label"> Guardian First Name</label>
+  <div class="col-lg-6 inputGroupContainer">
+  <div class="input-group">
+  <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+  <input  name="first_name" placeholder="First Name" class="form-control"  type="text"  required>
+    </div>
+  </div>
+  </div>
+
+  <!-- Text input-->
+
+  <div class="form-group">
+  <label class="col-lg-6 control-label" > Guardian last Name</label>
+    <div class="col-lg-6 inputGroupContainer">
+    <div class="input-group">
+  <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+  <input name="last_name" placeholder="Last Name" class="form-control"  type="text"  required>
+    </div>
+  </div>
+  </div>
+  <div class="form-group">
+  <label class="col-lg-6 control-label"> Guardian contact number.</label>
+    <div class="col-lg-6 inputGroupContainer">
+    <div class="input-group">
+        <span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span>
+  <input name="contact_no" placeholder="guardain primary" class="form-control" type="tel" required>
+  <input name="contact_no" placeholder="guardain secondary" class="form-control" type="tel" >
+    </div>
+  </div>
+  </div>
+
+
+
+</div>
+
+<br>
+
+
+
+<!-- Text input-->
+
+<div class="card-blockquote">
+  <h3 class="card-header col-lg-6"> Neighbor details</h3>
+
+
+  <!-- Text input-->
+
+  <div class="form-group">
+  <label class="col-lg control-label"> Neighbor First Name</label>
+  <div class="col-lg-6 inputGroupContainer">
+  <div class="input-group">
+  <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+  <input  name="first_name" placeholder="First Name" class="form-control"  type="text" required>
+    </div>
+  </div>
+  </div>
+
+  <!-- Text input-->
+
+  <div class="form-group">
+  <label class="col-lg-6 control-label" > Neighbor last Name</label>
+    <div class="col-lg-6 inputGroupContainer">
+    <div class="input-group">
+  <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+  <input name="last_name" placeholder="Last Name" class="form-control"  type="text" required>
+    </div>
+  </div>
+  </div>
+  <div class="form-group">
+  <label class="col-lg-6 control-label"> Neighbor contact number.</label>
+    <div class="col-lg-6 inputGroupContainer">
+    <div class="input-group">
+        <span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span>
+  <input name="contact_no" placeholder="neighbor primary" class="form-control" type="tel" required>
+  <input name="contact_no" placeholder="neighbor secondary" class="form-control" type="tel" >
+    </div>
+  </div>
+  </div>
+</div>
+
+
+
+
+<!-- Select Basic -->
+
+<!-- Success message -->
+<div class="alert alert-success" role="alert" id="success_message">Success <i class="glyphicon glyphicon-thumbs-up"></i> Success!.</div>
+
+<!-- Button -->
+<div class="form-group">
+<label class="col-lg-6 control-label"></label>
+<div class="col-lg-6"><br>
+  &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<button type="submit" class="btn btn-warning" >&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspSUBMIT <span class="glyphicon glyphicon-send"></span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</button>
+</div>
+</div>
+
+</fieldset>
+</form>
+</div>
+
+
+
+
+  </body>
